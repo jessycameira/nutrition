@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f7f2;
+  color: #2d2d2d;
+}
+
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+#semaine-label {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  margin-top: 5px;
+}
+
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Grille semaine */
+#vue-semaine {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.jour-colonne {
+  background: white;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.jour-titre {
+  font-weight: bold;
+  text-align: center;
+  color: #4caf50;
+  border-bottom: 2px solid #e8f5e9;
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+}
+
+/* Carte repas */
+.meal-card {
+  background: #f1f8f1;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+}
+
+.meal-card h4 {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.meal-card p {
+  color: #333;
+}
+
+.meal-card .calories {
+  font-size: 0.75rem;
+  color: #4caf50;
+  margin-top: 3px;
+}
+
+/* Résumé journalier */
+.nutrition-summary {
+  background: #e8f5e9;
+  border-radius: 6px;
+  padding: 6px 8px;
+  font-size: 0.78rem;
+  margin-top: 6px;
+  text-align: center;
+}
+
+/* Résumé semaine */
+#resume-semaine {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+#resume-semaine h2 {
+  color: #4caf50;
+  margin-bottom: 12px;
+}
+
+#totaux-semaine {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.total-item {
+  background: #f1f8f1;
+  border-radius: 8px;
+  padding: 12px 20px;
+  text-align: center;
+  flex: 1;
+  min-width: 120px;
+}
+
+.total-item span {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.total-item label {
+  font-size: 0.8rem;
+  color: #777;
+}
